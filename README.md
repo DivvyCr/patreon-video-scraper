@@ -13,18 +13,18 @@ In total, there are three stages to my workflow:
 
 *Relevant files: [patreon_extraction](https://github.com/DivvyCr/patreon-video-scraper/tree/main/patreon-extraction)*
 
-<details><summary>**Set-up:**</summary>
- 1. With **Firefox**, go to `about:debugging`; if you get redirected to Firefox documentation, you need to go to `about:config` and add/set the option `devtools.aboutdebugging.new-enabled` to `true`.
+<details><summary><b>Set-up:</b></summary>
+ 1. With <b>Firefox</b>, go to `about:debugging`; if you get redirected to Firefox documentation, you need to go to `about:config` and add/set the option `devtools.aboutdebugging.new-enabled` to `true`.
  2. In `about:debugging`, go to the 'This Firefox' section and then click 'Load Temporary Add-On'.
- 3. In the file browser pop-up, select any file in the [patreon_extraction](https://github.com/DivvyCr/patreon-video-scraper/tree/main/patreon-extraction) directory.
+ 3. In the file browser pop-up, select any file in the `patreon_extraction` directory.
  4. The plugin should now be loaded for this Firefox session.
 </details>
  
-<details><summary>**Usage:**</summary>
- 1. Go to any **Patreon** feed that contains posts with **embedded YouTube videos**.
- 2. Run the extension (called *Get Arguments to yt-dlp from Patreon Media*) from the toolbar.  
+<details><summary><b>Usage:</b></summary>
+ 1. Go to any <b>Patreon</b> feed that contains posts with <b>embedded YouTube videos</b>.
+ 2. Run the extension (called <i>Get Arguments to yt-dlp from Patreon Media</i>) from the toolbar.  
  ie. click the puzzle icon on the right-hand side of the toolbar, and click on the extension.
- 3. Open the *Developer Console* by pressing `Ctrl+Shift+K` and copy the string of YouTube links and titles; the string is a collection of arguments to use in the next stage.  
+ 3. Open the <i>Developer Console</i> by pressing `Ctrl+Shift+K` and copy the string of YouTube links and titles; the string is a collection of arguments to use in the next stage.  
  *Note:* if you do not see logs from the extension, try going to `about:config` and adding/setting the option `extensions.sdk.console.logLevel` to `all`.
 </details>
 
@@ -32,11 +32,11 @@ In total, there are three stages to my workflow:
 
 *Relevant files: [multi-ytdlp.sh](multi-ytdlp.sh)*
 
-<details><summary>**Set-up:**</summary>
-Run the [multi-ytdlp.sh](multi-ytdlp.sh) script.
+<details><summary><b>Set-up:</b></summary>
+Run the `multi-ytdlp.sh` script.
 </details>
 
-<details><summary>**Usage:**</summary>
+<details><summary><b>Usage:</b></summary>
 `multi-ytdlp 'https://youtu.be/identifier1' 'out1.mp3' 'https://youtu.be/identifier2' 'out2.mp3' ...`
 </details>
 
